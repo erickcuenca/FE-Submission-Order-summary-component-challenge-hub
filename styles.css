@@ -112,13 +112,12 @@ button:hover {
     background-color: hsl(245, 75%, 67%);
 }
 .cancel {
-    width: fit-content;
-    justify-self: stretch;
-    align-self: center;
     font-size: 14px;
     font-weight: 700;
     color: hsl(224, 23%, 55%);
     margin: auto;
+    width: 88px;
+    height: 18px;
     
 }
 .cancel:hover {
