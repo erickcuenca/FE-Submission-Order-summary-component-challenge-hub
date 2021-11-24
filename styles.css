@@ -1,0 +1,131 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    margin-left: calc(100vw - 100%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    background-color: white;
+    aspect-ratio: 1 / 1.65;
+    width: clamp(300px, 75vw, 350px);
+    border-radius: 15px;
+}
+[src="./images/illustration-hero.svg"] {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+}
+h1 {
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+}
+.info {
+    color: hsl(224, 23%, 55%);
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.logo-price-container {
+    display: flex;
+    flex-direction: row;
+}
+[src="./images/icon-music.svg"] {
+    aspect-ratio: 1 / 1;
+    height: 40px;
+    align-self: center;
+    margin: 15px;
+}
+.pricing-container {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 80px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: hsl(224, 23%, 55%);
+    line-height: 10px;
+}
+.plan {
+    font-weight: 700;
+    color: black;
+}
+.change:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 67%);
+}
+.change {
+    align-self: center;
+    color:hsl(245, 75%, 52%);
+    font-weight: 700;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+.price > * {
+    margin: 5px;
+}
+button {
+    all: unset;
+}
+button:hover {
+    cursor: pointer;
+}
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    filter: drop-shadow(0 8px 8px hsla(245, 75%, 52%, 0.295));
+}
+.payment:hover {
+    background-color: hsl(245, 75%, 67%);
+}
+.cancel {
+    width: fit-content;
+    justify-self: stretch;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin: auto;
+    
+}
+.cancel:hover {
+    color: black;
+}
+.attribution {
+    margin-top: 50px;
+    color: hsl(224, 23%, 55%);
+}
