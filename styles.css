@@ -164,7 +164,7 @@ button:hover {
     }
     [src="./images/icon-music.svg"] {
         margin: 10px;
-        filter: opacity(0%);
+        
     }
     .change {
         margin: 10px;
