@@ -1,31 +1,68 @@
+.wavcon {
+    max-width: 1%;
+    position: fixed;
+    height: 50%;
+    bottom: 50%;
+    z-index: -1;
+    overflow: hidden;
+}
+.wave-1 {
+    width: calc(100% + 600px);
+    height: 100%;
+    left: 0%;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: 600px;
+    background-repeat: repeat-x;
+    z-index: -1;
+    opacity: 70%;
+    position: fixed;
+    animation: wave2 9.5s linear infinite;
+    animation-delay: -0.35s;
+    overflow: hidden;
+}
+.wave-2 {
+    width: calc(100vw + 1200px);
+    height: 100%;
+    left: 0%;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: 600px;
+    background-repeat: repeat-x;
+    z-index: -1;
+    opacity: 30%;
+    position: fixed;
+    animation: wave2 7.75s linear infinite;
+    
+}
+@keyframes wave2 {
+    0% {        
+        transform: translateX(0px);
+    }
 
+    100% {
+        transform: translateX(-600px);
+    }
+}
 html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: 
-        url(./images/pattern-background-desktop.svg),
-        url(./images/pattern-background-desktop.svg);
-    background-repeat: repeat-x; 
-    animation: wave 10s infinite;
-    animation-timing-function: linear;
-    background-size: 
-        200%,
-        200%;
-    background-color: hsla(225, 46%, 65%, 0.877);
+    background-color: hsl(229, 81%, 86%);
     height: auto;
     min-height: auto;
     width: 100vw;
+    max-width: 100vw;
     font-family: 'Red Hat Display', sans-serif;
 }
 body {
-    margin: 5%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 100vw;
 }
 .card {
+    margin-top: 5%;
     display: grid;
     grid-template-rows: min-content 1fr;
     background-color: white;
@@ -141,20 +178,8 @@ button:hover {
 }
 .attribution {
     margin-top: 5rem;
+    margin-bottom: 5%;
     color: hsl(224, 23%, 55%);
-}
-
-@keyframes wave {
-    0% {        
-        background-position-x:
-            0%,
-            -400%;
-    }
-    100% {
-        background-position-x: 
-            200%,
-            0%;
-    }
 }
 
 @media only screen 
