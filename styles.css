@@ -3,11 +3,17 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-color: hsl(225, 100%, 94%);
-    min-height: 100vh;
-    margin-left: calc(100vw - 100%);
+    background-image: 
+        url(./images/pattern-background-desktop.svg),
+        url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x; 
+    animation: wave 10s infinite;
+    animation-timing-function: linear;
+    background-size: 
+        200%,
+        200%;
+    background-color: hsla(225, 46%, 65%, 0.877);
+    height: 100vh;
     width: 100vw;
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -135,6 +141,19 @@ button:hover {
 .attribution {
     margin-top: 5rem;
     color: hsl(224, 23%, 55%);
+}
+
+@keyframes wave {
+    0% {        
+        background-position-x:
+            0%,
+            -400%;
+    }
+    100% {
+        background-position-x: 
+            200%,
+            0%;
+    }
 }
 
 @media only screen 
