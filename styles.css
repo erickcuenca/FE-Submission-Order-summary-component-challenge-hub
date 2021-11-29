@@ -16,12 +16,11 @@
     z-index: -1;
     opacity: 70%;
     position: fixed;
-    animation: wave2 9.5s linear infinite;
+    animation: wave 9.5s linear infinite;
     animation-delay: -0.35s;
-    overflow: hidden;
 }
 .wave-2 {
-    width: calc(100vw + 1200px);
+    width: calc(100vw + 600px);
     height: 100%;
     left: 0%;
     background-image: url(./images/pattern-background-desktop.svg);
@@ -30,16 +29,16 @@
     z-index: -1;
     opacity: 30%;
     position: fixed;
-    animation: wave2 7.75s linear infinite;
+    animation: wave 6.75s linear infinite;
     
 }
-@keyframes wave2 {
+@keyframes wave {
     0% {        
-        transform: translateX(0px);
+        transform: translate3d(0px ,0 ,0);
     }
 
     100% {
-        transform: translateX(-600px);
+        transform: translate3d(-600px, 0, 0);
     }
 }
 html {
